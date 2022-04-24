@@ -1,0 +1,79 @@
+{
+	"variables": [],
+	"info": {
+		"name": "mongoose - 第二週作業",
+		"_postman_id": "0ddc8bad-67a6-dfae-900d-6c4aacfc386b",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "GetData",
+			"request": {
+				"url": "https://hidden-earth-30395.herokuapp.com/",
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "PostData",
+			"request": {
+				"url": "https://hidden-earth-30395.herokuapp.com/posts",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"description": "",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"name\": \"Joanne\",\n  \"tags\": [\"健康\"],\n  \"type\": \"group\",\n  \"content\": \"身體健康\"\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "updateData",
+			"request": {
+				"url": "https://hidden-earth-30395.herokuapp.com/posts/626502307a721f73251834d6",
+				"method": "PATCH",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"name\": \"Andy\"\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "DeleteOneData",
+			"request": {
+				"url": "https://hidden-earth-30395.herokuapp.com/posts/",
+				"method": "DELETE",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "deleteAllData",
+			"request": {
+				"url": "https://hidden-earth-30395.herokuapp.com/posts",
+				"method": "DELETE",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		}
+	]
+}
