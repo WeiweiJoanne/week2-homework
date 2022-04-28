@@ -3,7 +3,7 @@
 
 const Post = require('../models/post')
 const HttpController = require('../controllers/http')
-const PostController = require('../controllers/post')
+const PostController = require('../controllers/posts')
 
 const routes = async (req, res) => {
   const {url,method} = req
