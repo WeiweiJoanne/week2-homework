@@ -11,7 +11,8 @@ const routes = async (req, res) => {
   req.on('data', chunk => {
     body += chunk
   })
-  if (url == '/' && method == 'GET') {
+
+  if (url == '/posts' && method == 'GET') {
     PostController.getPost(req, res)
     // const dataPosts = await Post.find()
     // handleSuccess(res, dataPosts)
