@@ -10,7 +10,7 @@
 		{
 			"name": "GetData",
 			"request": {
-				"url": "https://hidden-earth-30395.herokuapp.com/",
+				"url": "https://hidden-earth-30395.herokuapp.com/posts",
 				"method": "GET",
 				"header": [],
 				"body": {},
@@ -26,14 +26,13 @@
 				"header": [
 					{
 						"key": "Content-Type",
-						"value": "application/x-www-form-urlencoded",
-						"description": "",
-						"disabled": true
+						"value": "application/json",
+						"description": ""
 					}
 				],
 				"body": {
 					"mode": "raw",
-					"raw": "{\n  \"name\": \"Joanne\",\n  \"tags\": [\"健康\"],\n  \"type\": \"group\",\n  \"content\": \"身體健康\"\n}"
+					"raw": "{\n  \"name\": \"小花\",\n  \"tags\": [\"可愛\",\"貓咪\",\"毛孩\"],\n  \"type\": \"group\",\n  \"content\": \"小花敲可愛\"\n}"
 				},
 				"description": ""
 			},
@@ -42,7 +41,7 @@
 		{
 			"name": "updateData",
 			"request": {
-				"url": "https://hidden-earth-30395.herokuapp.com/posts/626502307a721f73251834d6",
+				"url": "https://hidden-earth-30395.herokuapp.com/posts/",
 				"method": "PATCH",
 				"header": [],
 				"body": {
@@ -65,7 +64,7 @@
 			"response": []
 		},
 		{
-			"name": "deleteAllData",
+			"name": "DeleteAllData",
 			"request": {
 				"url": "https://hidden-earth-30395.herokuapp.com/posts",
 				"method": "DELETE",
