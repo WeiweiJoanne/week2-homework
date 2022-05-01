@@ -36,7 +36,12 @@ const post = {
     try {
       const id = req.url.split('/').pop()
       const deleteOne = await Post.findByIdAndDelete(id)
-      handleSuccess(res, deleteOne)
+      
+      if (deleteOne !== null) {
+        handleSuccess(res, deleteOne)
+      } else {
+        handleError(res)
+      }
     } catch (err) {
       handleError(res, err)
     }

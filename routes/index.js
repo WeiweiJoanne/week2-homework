@@ -47,7 +47,7 @@ const routes = async (req, res) => {
 
   } else if (url.startsWith('/posts/') && method == 'PATCH') {
     req.on('end', () => {
-      PostController.updateOne(req, res,body)
+      PostController.updateOne(req, res, body)
       // try {
       //   const id = req.url.split('/').pop()
       //   const data = JSON.parse(body)
@@ -59,9 +59,9 @@ const routes = async (req, res) => {
     })
 
   } else if (method == "OPTIONS") {
-    HttpController.cors({ res, req })
+    HttpController.cors( req,res )
   } else {
-    HttpController.notFound({ res, req })
+    HttpController.notFound(req, res)
   }
 
 }
